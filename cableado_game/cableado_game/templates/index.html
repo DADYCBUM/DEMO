@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío de Cableado Estructurado</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <div id="app">
+    <!-- El juego se renderiza aquí por JavaScript -->
+    <div style="display:flex;align-items:center;justify-content:center;height:100vh;color:#00d4aa;font-family:'Orbitron',sans-serif">
+      Cargando...
+    </div>
+  </div>
+
+  <!-- Scripts del juego -->
+  <script src="{{ url_for('static', filename='js/game_data.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
